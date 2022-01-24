@@ -1,0 +1,184 @@
+/**
+ * Element 样式重置（为保持重置样式统一管理）
+ */
+.el-header{
+	height: auto!important;
+}
+.g-boss-child {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	.clear-number {
+		input[type='number'] {
+			padding: 0 0 0 15px !important;
+		}
+	}
+	.el-dialog-limit {
+		.el-dialog__body {
+			max-height: 400px;
+			overflow-y: auto;
+		}
+	}
+	.el-menu {
+		border: none;
+	}
+	// el-button
+	// el-table
+	.el-table th.is-leaf {
+		background: #f7f7f7;
+		font-size: 12px;
+		font-weight: normal;
+		border-bottom: 1px solid #ededed;
+		padding: 0 10px;
+		height: 46px;
+	}
+	.el-table td {
+		font-size: 12px;
+		border-bottom: 1px solid #ededed;
+		padding: 7px 10px 5px 10px;
+		height: 50px;
+	}
+	.el-table .cell {
+		line-height: 16px;
+		padding: 0px !important;
+	}
+	.el-table .el-button span {
+		font-size: 12px;
+	}
+	.el-table-column--selection .cell {
+		padding: 0px !important;
+	}
+	.el-table__row--level-1 td,
+	.el-table__row--level-2 td,
+	.el-table__row--level-3 td,
+	.el-table__row--level-4 td,
+	.el-table__row--level-5 td {
+		border: none !important;
+	}
+	.el-table__row.expanded td {
+		border-top: 1px solid #dfe6ec;
+	}
+	.el-table__row.expanded:nth-child(1) td,
+	.el-table__row.expanded + .el-table__row.expanded td {
+		border-top: none;
+	}
+	.el-table__row.expanded.el-table__row--level-0 td {
+		border-bottom: none;
+	}
+	// el-form
+	.el-form{
+		background: #fff;
+		padding: 20px 0;
+	}
+	.el-form-item:nth-last-child(1) {
+		margin-bottom: 0px;
+	}
+	.el-form-item__label {
+		font-size: 12px !important;
+	}
+    .el-form-item__content{
+        font-size: 12px;
+    }
+	.el-form .el-form-item .el-input {
+		line-height: 1;
+	}
+	.el-form .el-form-item .el-cascader,
+	.el-form .el-form-item .el-input,
+	.el-form .el-form-item .el-select,
+	.el-form .el-form-item .el-input-number {
+		width: 220px;
+		font-size: 12px;
+	}
+	.el-form .el-form-item .el-cascader .el-input,
+	.el-form .el-form-item .el-select .el-input {
+		width: 100%;
+	}
+	.el-form .el-form-item .el-radio__label,
+	.el-form .el-form-item .el-checkbox__label,
+	.el-form .el-form-item .el-range-input {
+		font-size: 12px;
+	}
+	// .el-form .el-form-item .el-input-number .el-input {
+	//   width: auto;
+	// }
+	.el-form .el-form-item .el-textarea {
+		width: 350px;
+	}
+	.el-form .el-textarea__inner {
+		min-height: 100px !important;
+	}
+	.el-form .el-form-item .el-button {
+		// float: left;
+	}
+	.el-form .el-form-item .el-checkbox-group,
+	.el-form .el-form-item .el-radio-group,
+	.el-form .el-form-item .el-checkbox-group .el-checkbox,
+	.el-form .el-form-item .el-radio-group .el-radio {
+		vertical-align: middle !important;
+	}
+	.el-form.el-form--inline{
+		padding-bottom: 5px;
+	}
+	.el-form.el-form--inline .el-form-item {
+		// min-width: 250px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	.el-form.el-form--inline .el-form-item__label {
+		text-align: right;
+		width: 90px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.el-form.el-form--inline .el-form-item .el-input,
+	.el-form.el-form--inline .el-form-item .el-select,
+	.el-form.el-form--inline .el-form-item .el-cascader,
+	.el-form.el-form--inline .el-form-item .el-input-number,
+	.el-form.el-form--inline .el-form-item .el-switch {
+		width: 160px;
+	}
+	.el-form.el-form--inline .el-form-item .el-range-editor {
+		width: 420px;
+	}
+	// el-dialog
+	.el-dialog{
+		.s-footer{
+			padding-top: 20px;
+			text-align: right;
+		}
+		.s-footer .el-form-item{
+			text-align: right;
+			margin: 0px;
+		}
+		.demo-wrap{
+			padding: 0px;
+		}
+		.el-form{
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+	}
+	.el-dialog__footer {
+		padding: 20px 0 0 0;
+	}
+	.el-dialog__body + .el-dialog__footer {
+		padding: 20px;
+	}
+	.el-dialog__body {
+		padding-top: 15px;
+		padding-bottom: 20px;
+	}
+	// el-page-header
+	.el-page-header {
+		.el-page-header__left {
+			.el-page-header__icon {
+				display: none;
+			}
+			&::after {
+				display: none;
+			}
+		}
+	}
+}

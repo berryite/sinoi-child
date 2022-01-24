@@ -1,0 +1,31 @@
+/**
+ * 这里公用内置变量（为保持整体风格一致）
+ *
+ * 你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ * 可以直接在 scss 代码中使用如下变量，直接使用这些变量（无需 import 这个文件）
+ */
+
+// 颜色 
+$--color-theme: #0180cd;
+$--color-btn: #2A3950;
+$--color-white:#ffffff;
+$--color-grey:#f8f8f8;
+$--color-0: #000000;
+$--color-1: #111;
+$--color-3: #333333;
+$--color-6: #666666;
+$--color-9: #999999;
+$--color-f2: #F2F2F2;
+$--color-d9: #D9D9D9;
+$--color-eb: #EBEBEB;
+$--color-c0: #C0C0C0;
+$--color-e0: #E0E0E0;
+$--color-f1:#f1f1f1;
+$--color-f7: #f7f7f7;
+$--color-left: #364760;
+$--color-left-hover: #2A3950;
+$--color-ui: #6283a9;
+$--color-mask:rgba(0, 0, 0, 0.4); //遮罩颜色
+
+// 背景默认颜色
+$--default-bg: #F3F7FA; // 背景色
