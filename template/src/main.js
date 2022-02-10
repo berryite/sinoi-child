@@ -3,6 +3,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import qkStore from './hooks/qk-store'
+
 // 三方插件
 import elementExtend from './plugins/element'
 import ElementPlus from 'element-plus'
@@ -19,9 +21,9 @@ import '@/style'
 
 let instance = null
 function render(props = {}) {
-	const { container, routerBase, qkStore } = props
+	const { container, routerBase } = props
 	instance = createApp(App)
-	instance.use(qkStore || store)
+	instance.use(store)
 	instance.use(router(routerBase))
 	instance.use(ElementPlus, { size: 'medium', locale: zhCn })
 	instance.use(elementExtend)
@@ -38,6 +40,7 @@ export async function bootstrap() {
 	console.log('[vue] vue app bootstraped')
 }
 export async function mount(props) {
+  props.qkStore && qkStore.setStore(props.qkStore)
 	render(props)
 	instance.config.globalProperties.$onGlobalStateChange = props.onGlobalStateChange
 	instance.config.globalProperties.$setGlobalState = props.setGlobalState

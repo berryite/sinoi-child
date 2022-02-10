@@ -10,6 +10,7 @@
 
 <script>
 import { ref } from 'vue'
+// import qk from '@/hooks/qk-store'
 export default {
   name: 'Home',
   props: {
@@ -17,9 +18,10 @@ export default {
   },
   setup() {
 
+    // console.log('主系统权限=', qk.store.power('boss-app-manage:editApp'))
     const groupTest = ref(2)
     const options=ref([{label:'1',value:2}])
-    return {  groupTest ,options}
+    return { groupTest ,options}
   },
 }
 </script>
