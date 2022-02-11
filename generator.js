@@ -3,7 +3,7 @@ module.exports = (api, options, rootOptions) => {
         dependencies: {
             axios: "^0.21.1",
             "core-js": "^3.6.5",
-            "element-plus": "1.1.0-beta.24",
+            "element-plus": "^2.0.1",
             "js-base64": "^3.6.1",
             vue: "^3.0.0",
             "vue-router": "^4.0.0-0",
