@@ -8,6 +8,3 @@ import './element/index.scss'
 
 // 快捷样式
 import './public/zxx.css'
-
-// iconfont
-import './icons/index.scss'

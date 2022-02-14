@@ -8,7 +8,7 @@ class qkStore {
             return {}
         },
         power() {
-            return () => {}
+            return true
         }
 	}
 

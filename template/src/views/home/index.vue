@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="home-head">
-      <c-icon name="font18" class-name="icon-p"></c-icon>
+      <c-icon name="shouye" class-name="icon-p"></c-icon>
       <div class="title">WELCOME</div>
       <div class="desc">子系统模板首页</div>
     </div>

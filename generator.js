@@ -73,7 +73,10 @@ module.exports = (api, options, rootOptions) => {
                 line.trim().match(/^<meta/)
             );
             
-            lines[lastMetaIndex] += '\n    <link rel="icon" href="<%= BASE_URL %>favicon.ico">';
+            lines[lastMetaIndex] +=
+                '\n    <link rel="icon" href="<%= BASE_URL %>favicon.ico">';
+            lines[lastMetaIndex] +=
+                '\n    <link rel="icon" href="https://at.alicdn.com/t/font_3181199_u4qjypmz20f.css">';
             lines[lastMetaIndex] +=
                 "\n    <title><%= htmlWebpackPlugin.options.title %></title>";
 
